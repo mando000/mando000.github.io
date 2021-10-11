@@ -66,28 +66,28 @@ li {
     width: 80px;
     float: right;
     background-color: white;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px rgb(128, 128, 128);
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.397);
     padding: 0;
 }
 
 .page {
     padding: 2em;
-    box-shadow: 2px 2px 5px grey;
+    box-shadow: 2px 2px 5px rgb(128, 128, 128);
     background-color: #eeeeee;
-    border: 3px solid #0E3D65;
+    border: 3px solid #0e6548;
     border-radius: 10px;
     width: 50%;
     float: left;
 }
 
 body {
-    color: green;
+    color: rgb(128, 0, 90);
 }
 
 h1 {
     color: red;
     text-align: center;
-    background-color: gray;
+    background-color: rgb(128, 128, 128);
 }
