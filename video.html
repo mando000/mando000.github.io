@@ -1,205 +1,562 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-
-    <title>index_travel</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
-
-
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid p-5 bg-primary text-white text-center">
-            <h1><b>Skyloft Travel Company</b></h1>
-            <p><i>Lose yourself in the beauty of Hyrule</i></p>
+    <nav class="navbar navbar-expand-sm bg-dark text-light">
+        <div class="container">
+            <a class="navbar-brand text-light" href="index.html">Index Page</a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/profile.html">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/inspire.html">Inspire</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/amuse.html">Amuse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/educate.html">Educate</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/test.html">Test</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/superhero.html">Superhero</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/wanted.html">Wanted</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/blog.html">Business Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/nonprofit.html">Non-profit Business Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="/bacs200/travel/index.html">Travel Agency</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <main>
+    <div class="container-fluid p-5 bg-primary text-white text-center">
+        <a href="/bacs200/index.html" class="text-white">
+            <h1>Portfolio</h1>
+        </a>
+        <p>Armando Alvarez</p>
+    </div>
 
-        <!--Left-->
-        <div class="container-fluid p-5">
-            <div class="row">
-                <div class="col-md p-3 bg-white text-dark">
-                    <h2>Travel to the beautiful lands of Hyrule today</h2>
-                    <p>Hyrule is a vast and beautiful landscape full of different places to discover. Hyrule has long
-                        been known for its varied landscape and large stunning vistas. From Hyrule Castle, in the center
-                        of the mainland, to the Gerudo Desert in the south west, there is countless things to discover.
+    <div class="container  p-5">
+        <h1>Information</h1>
+        <div class="row">
+
+
+            <div class="col-lg-6">
+                <div class="card bg-light text-dark m-5 ">
+                    <div class="card-header bg-primary text-light text-center">
+                        <h2>About Me</h2>
+                    </div>
+
+                    <div class="card-body p-5">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="profile" style="width:500px;height:600px;">
+                        <p>My name is Armando Alvarez , this is currently my last semester , expected to graduate in
+                            December. I have a 11 month
+                            year old daughter and am absolutely enjoying fatherhood. My major is Business Management.
+                            Originally from Honduras. I
+                            love the game of basketball and enjoy working out in my free time. I am currently working at
+                            TJ Maxx and just finished
+                            up my internship at Buckle . I have been working at TJ for a good 3 months along with Buckle
+                            throughout the summer. My
+                            position for both jobs was a sales floor associate . I am taking this course to apply my
+                            knowledge in the business
+                            world. I am excited to be taking this 400 level class . I understand it will be tough but I
+                            am blessed to be in this
+                            predicament. I am available on MWF after 2:00 pm. </p>
+
+
+
+                        <p>Welcome to my portfolio page!</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card bg-light text-dark m-5">
+                    <div class="card-header bg-primary text-light text-center">
+                        <h2>Business Video</h2>
+                    </div>
+                    <div class="card-body p-5">
+                        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=_pp_0i3tQWg"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+
+                        Transcript:
+                        <ul>
+                            <li>so Malcolm X once told us our people not
+                                00:20
+                                only have to be reeducate it to the
+                                00:22
+                                importance of supporting black
+                                00:23
+                                businesses but the black man himself
+                                00:26
+                                must be made aware of the importance of
+                                00:28
+                                going into business
+                                00:29
+                                now I discovered this quote right before
+                                00:31
+                                I began my journey into the
+                                00:32
+                                entrepreneurial world and it completely
+                                00:35
+                                stopped me in my tracks I felt like he
+                                00:36
+                                was speaking to me now that was a
+                                00:39
+                                motivation I had needed to move forward
+                                00:41
+                                and support as many black businesses as
+                                00:42
+                                I could and help others do the same
+                                00:45
+                                so I spent so many hours searching the
+                                00:47
+                                internet in hopes of finding you know
+                                00:50
+                                the history of black owned businesses in
+                                00:51
+                                the current state and that was when I
+                                00:53
+                                learned that we've had the keys all
+                                00:55
+                                along and the 1.1 trillion dollar buying
+                                00:57
+                                power to create a powerhouse black
+                                00:59
+                                community but my biggest revelation was
+                                01:02
+                                that supporting black businesses was not
+                                01:04
+                                enough now just so you understand where
+                                01:06
+                                I'm coming from I want you to imagine
+                                01:08
+                                that $10 bill in your pocket or in your
+                                01:10
+                                wallet right now now in six hours that
+                                01:14
+                                will have disappeared now this happens
+                                01:16
+                                every six hours in a black community
+                                01:18
+                                where our money rotates and circulates
+                                01:20
+                                for only six hours before it leaves an X
+                                01:23
+                                or someone else's community and just so
+                                01:25
+                                you have a frame of reference I want you
+                                01:27
+                                to consider this in Asian communities
+                                01:29
+                                their money circulates for a month in
+                                01:31
+                                Jewish communities it circulates for 20
+                                01:34
+                                days in the black community it
+                                01:36
+                                circulates for only six hours now in
+                                01:39
+                                order for us to build this community we
+                                01:41
+                                have to hold on to those dollars for as
+                                01:43
+                                long as possible to create more
+                                01:45
+                                long-term wealth now through my research
+                                01:48
+                                I've learned that supporting black
+                                01:50
+                                businesses isn't the only thing that we
+                                01:51
+                                must take I learned there three
+                                01:53
+                                different components one of course
+                                01:55
+                                supporting black businesses to creating
+                                01:58
+                                more black entrepreneurs in our
+                                01:59
+                                communities and more of a wealth and
+                                02:01
+                                broader term and broader spectrum of
+                                02:03
+                                businesses and three creatively sharing
+                                02:06
+                                our resources now since its Black
+                                02:08
+                                History Month I feel like it's only
+                                02:10
+                                fitting that we look back at some
+                                02:11
+                                successful black communities to see how
+                                02:13
+                                they've done it and completed all three
+                                02:15
+                                of those components successfully because
+                                02:17
+                                the best way for us to prepare for our
+                                02:19
+                                future is to learn from our past now in
+                                02:21
+                                2012 I began doing research on different
+                                02:24
+                                black owned businesses and through that
+                                02:26
+                                research I discovered my most favorite
+                                02:28
+                                part of history which is known as black
+                                02:31
+                                wallstreet of course now this community
+                                02:34
+                                was located in Tulsa Oklahoma the late
+                                02:36
+                                the late 1800s Early 1900s now what made
+                                02:39
+                                this community so special with because
+                                02:41
+                                if they had this broad spectrum of black
+                                02:43
+                                owned businesses everything in their
+                                02:45
+                                community was black owned they had black
+                                02:47
+                                owned pharmacies night clubs movie
+                                02:49
+                                theaters anything you can imagine they
+                                02:51
+                                had it so they had no reason to step
+                                02:53
+                                outside of that community and purchase
+                                02:55
+                                anything else so their money
+                                02:56
+                                continuously rotated and circulated
+                                02:59
+                                within that community making them
+                                03:00
+                                extremely prosperous now one of the
+                                03:03
+                                biggest issues I've seen within our
+                                03:04
+                                community is that we don't necessarily
+                                03:06
+                                have that broad range of businesses
+                                03:08
+                                today now many communities is difficult
+                                03:11
+                                if not impossible to find black owned
+                                03:13
+                                grocery stores or even black on
+                                03:15
+                                pharmacies so those dollars immediately
+                                03:18
+                                run out of our community now as I said
+                                03:21
+                                before in order for us to build we have
+                                03:22
+                                to make sure that we foster that
+                                03:24
+                                entrepreneurial mindset and ourselves
+                                03:26
+                                and even in our kids because I truly
+                                03:29
+                                believe and I want you to quote me on
+                                03:31
+                                this that each and every one of us
+                                03:33
+                                should be an entrepreneur in some
+                                03:34
+                                capacity regardless of what your
+                                03:36
+                                full-time position is whether that means
+                                03:39
+                                that you're learning the ropes from
+                                03:40
+                                there and then you're applying that to
+                                03:42
+                                your own business or if you're taking
+                                03:44
+                                your passion in your hobby and turning
+                                03:45
+                                that into a side business it is all
+                                03:47
+                                necessary one to contribute to your own
+                                03:51
+                                legacy in your own family generations
+                                03:53
+                                down the line and to to contribute to
+                                03:55
+                                the black community in general
+                                03:57
+                                now another community that did a really
+                                04:00
+                                good job at one of those components it's
+                                04:02
+                                in Boston Massachusetts so how do we
+                                04:04
+                                create those businesses successfully
+                                04:06
+                                well that leads to the next component
+                                04:08
+                                sharing our resources now in Boston
+                                04:11
+                                Massachusetts in 1900 Liberty Washington
+                                04:14
+                                founded an organization known as the
+                                04:17
+                                National Negro business League now the
+                                04:19
+                                whole aim of this business or this
+                                04:21
+                                organization was to help
+                                04:23
+                                african-americans create businesses and
+                                04:25
+                                make a profit so you had these
+                                04:28
+                                successful entrepreneurs these aspiring
+                                04:30
+                                entrepreneurs and professionals who got
+                                04:32
+                                together and they basically networks and
+                                04:34
+                                shared their resources and their stories
+                                04:36
+                                about their successes and their failures
+                                04:38
+                                so that other people can learn from what
+                                04:40
+                                they did now one of the biggest things
+                                04:43
+                                that I've
+                                04:43
+                                is that we don't it's not that we don't
+                                04:46
+                                have the ambition and a passion to do
+                                04:48
+                                this it's just that we don't have the
+                                04:50
+                                knowledge necessarily but the good news
+                                04:53
+                                is that there are many of us who have
+                                04:54
+                                gone down that road so what I would say
+                                04:57
+                                is don't be afraid to share that
+                                04:58
+                                information if you know how to form an
+                                05:00
+                                LLC or get a trademark or logo
+                                05:03
+                                trademarks that is some information that
+                                05:06
+                                a lot of business owners or aspiring
+                                05:08
+                                owners don't have I know because I was
+                                05:10
+                                one of them a couple years ago so never
+                                05:12
+                                be afraid to share that information and
+                                05:14
+                                this also applies to the professional
+                                05:16
+                                and academic world wherever you are
+                                05:18
+                                today I guarantee you that there is
+                                05:20
+                                someone who is one step behind you or
+                                05:23
+                                attend steps who is wondering how they
+                                05:24
+                                can get to where you are today
+                                05:26
+                                so never hesitate to share that
+                                05:28
+                                information and lift as you climb
+                                05:30
+                                speaking of lifting as you climb that is
+                                05:33
+                                exactly what another group of women did
+                                05:35
+                                in Detroit Michigan in the 1930s I
+                                05:37
+                                actually just learned about this story a
+                                05:39
+                                couple weeks ago so in Detroit Michigan
+                                05:42
+                                in this black community there are a lot
+                                05:45
+                                of different businesses there that were
+                                05:46
+                                not black owned these businesses would
+                                05:49
+                                gladly take their money but they would
+                                05:51
+                                not hire them so these women were fed up
+                                05:54
+                                and they said we'll look if you're not
+                                05:55
+                                gonna hire us we will not be spending
+                                05:57
+                                our dollars here and so they organized
+                                06:00
+                                with other women in that community and
+                                06:01
+                                taught each other about their buying
+                                06:03
+                                power and they made it their business to
+                                06:05
+                                go around and support black owned
+                                06:06
+                                businesses only now these women were
+                                06:08
+                                such a fierce such a force to be
+                                06:11
+                                reckoned with but they went on to
+                                06:13
+                                encourage ten thousand women all around
+                                06:15
+                                the country to do the same supporting
+                                06:17
+                                black owned businesses boycotting
+                                06:19
+                                businesses that were not supporting
+                                06:21
+                                their communities now they also went
+                                06:23
+                                into major negotiations with major
+                                06:25
+                                corporations as well and throughout
+                                06:27
+                                those years they created 75,000 jobs for
+                                06:31
+                                African Americans pure black girl magic
+                                06:33
+                                now as you can see with a lot of these
+                                06:35
+                                stories we've had the keys all along
+                                06:37
+                                almost a hundred years ago to get this
+                                06:40
+                                done but what I really really amazing
+                                06:43
+                                about these stories is the fact that we
+                                06:44
+                                are still fighting the same battles a
+                                06:46
+                                hundred years later it's almost 100
+                                06:50
+                                years ago we were still saying by Black
+                                06:51
+                                support black businesses and here we are
+                                06:54
+                                today saying the same thing
+                                06:56
+                                which is why I say it's important that
+                                06:57
+                                we learn from our past so we can prepare
+                                07:00
+                                for our future so that we don't repeat
+                                07:02
+                                it again so with that said I challenge
+                                07:06
+                                you all once you leave here to figure
+                                07:07
+                                out how you will contribute to each of
+                                07:09
+                                those three components
+                                07:10
+                                what type of business will you move
+                                07:12
+                                forward to create to benefit yourself
+                                07:14
+                                your family your legacy and the black
+                                07:16
+                                community what businesses will you move
+                                07:19
+                                on to support and how will you use your
+                                07:21
+                                resources to create or to help someone
+                                07:24
+                                else to mentor someone to be a mentee
+                                07:26
+                                and make sure that you're using your
+                                07:28
+                                resources to give back to the community
+                                07:30
+                                to help someone else from our history
+                                07:32
+                                I've learned that we've definitely done
+                                07:34
+                                this before and we've done it when we've
+                                07:36
+                                had less rights unless resource until we
+                                07:38
+                                have today so if we were able to do it
+                                07:41
+                                back then there is nothing stopping us
+                                07:43
+                                from doing it today so why not now thank
+                                07:46
+                                you
+                                07:52
+                                you</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="card bg-success text-light m-5 p-5">
+                    <h2>Learn More</h2>
+                    <p>
+                        <a href="https://www.w3schools.com/bootstrap5/bootstrap_cards.php"
+                            class="btn btn-light text-success">W3Schools Website</a>
                     </p>
                     <p>
-                        Your trip will take you all over Hyrule, and you'll get to experience the various cultures and
-                        monuments within.
+                        <a href="https://getbootstrap.com/docs/5.1/components/card/"
+                            class="btn btn-light text-success">Bootstrap Website</a>
                     </p>
-                </div>
-                <!--Right-->
-                <div class="col-md p-3 bg-light text-light">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="hyrule_images\110-1101972_big.png" alt="ruins">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="hyrule_images\Great Plat.png" alt="greatplat">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="hyrule_images\Hyrule-Castle.jpg" alt="castle">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
-        <!--Featuretts-->
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Visit Kakarike Village
-                </h2>
-                <p class="lead">Kakariko Village is one of the main villages in centeral Hyrule. Known for its
-                    hospitality and deep cultural roots, your stay here will be nothing short of transformative.
-                </p>
-                <p class="lead">
-                    The village is nestled in a small canyon full of waterfalls, trees, and maybe even a Cucco or two!
-                </p>
+    </div>
+    <section class="footer">
+        <footer class="bg-light text-center text-lg-start">
+            <div class="text-center p-3" style="background-color: rgb(0, 162, 255); color: rgb(255, 255, 255)">
+                <img src="/bacs200/images/Bear.png" alt="bear" style="width:20px;height:20px;">
+                © 2021 Copyright:
+                <a class="text-light" href="#">Elaina Rollins</a>
             </div>
-            <div class="col-md-5">
-                <img class="d-block w-100" src="hyrule_images\Kakariko-village.jpg" alt="village">
-            </div>
+        </footer>
+    </section>
+</body>
 
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Picnic at Lake Hylia
-                        <p class="lead">Lake Hylia is located only an hour from the main castle and is one of the
-                            staples of Hyrule. Many woodland and aquatic creatures call this lake home so there's always
-                            plenty to be seen at the lake. If you're lucky, on full moons and at certain time of the
-                            night people have
-                            said they can spot a large dragon coiling through the sky near the bridge.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <img class="d-block w-100" src="hyrule_images\Lake-Hylia.webp" alt="lake">
-
-                </div>
-            </div>
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">Discover Death Mountain<span class="text-muted"> the hottest place in
-                            Hyrule</span></h2>
-                    <p class="lead">Death Mountain is something you just can't miss! Located at the Nothern most tip of
-                        Hyrule, it is one of the largest mountains in Hyrule. No matter where you are, you can always
-                        see Death Mountain, especially at night when the peak of the mountain glows a bright orange and
-                        red.
-                    </p>
-                    <p class="lead">
-                        If you think you're brave enough to try and climb Death Mountain, a guided adventure hike lead
-                        by a team of experienced Goron, will take you up the sweltering hot paths of Death Mountain.
-                    </p>
-                    <p><i>This tour is only included in the Adventure! package</i></p>
-                </div>
-                <div class="col-md-5">
-                    <img class="d-block w-100" src="hyrule_images\death-mtn.jpg" alt="deathmtn">
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-            <div class="alert">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                <b>Only five Adventure! packages left, buy while you can!</b>
-            </div>
-            <!--Pricing-->
-            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Standard</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$150<small
-                                    class="text-muted fw-light">/night</small>
-                            </h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Nightly stay in Kakriko</li>
-                                <li>Tour through Castle town</li>
-                                <li>Standard Airfare</li>
-                                <li>24/7 Security</li>
-                            </ul>
-                            <a href="buy.html"><button type="button" class="w-100 btn btn-lg btn-outline-success">Sign
-                                    up now</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm">
-                        <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Premium</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$300<small
-                                    class="text-muted fw-light">/night</small>
-                            </h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Everything included in the Standard</li>
-                                <li>An upclose look at the castle</li>
-                                <li>Night time at Lake Hylia</li>
-                            </ul>
-                            <a href="buy.html"><button type="button" class="w-100 btn btn-lg btn-success">Get
-                                    started</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm border-success">
-                        <div class="card-header py-3 text-white bg-success border-success">
-                            <h4 class="my-0 fw-normal">Adventure!</h4>
-                        </div>
-                        <div class="card-body">
-                            <h1 class="card-title pricing-card-title">$1000<small class="text-muted fw-light">
-                                    total!</small>
-                            </h1>
-                            <ul class="list-unstyled mt-3 mb-4">
-                                <li>Premium Access</li>
-                                <li>Guided tour of Death Mountain</li>
-                                <li>Full Castle/Town tour</li>
-                                <li>One free guaranteed night</li>
-                            </ul>
-                            <a href="buy.html"><button type="button" class="w-100 btn btn-lg btn-success">Begin your
-                                    adventure</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </main>
+</html>
